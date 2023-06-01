@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumTris</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="headers" class="headers d-flex">
+        <img src="logo.png" alt="">
+        <div id="title-container" class="title-container">
+            <h1>NumTris</h1>
+            <h3>Consigue sumar el mayor número de múltiplos de 5 para ganar</h3>
+        </div>
+    </header>
+
+    <main id="main-page" class="main-page">
+        <p>Introduce el nombre de los jugadores para ganar</p>
+        <div id="scores" class="scores">
+            <div class="top-scores">
+                <h4>Top 10 puntuaciones de hoy</h4>
+            </div>
+            <table id="top-scores-table">
+                <thead>
+                    <tr id="table-head">
+                        <td>Pos.</td>
+                        <td>Usuario</td>
+                        <td>Puntuación</td>
+                    </tr>
+                </thead>
+            </table>
+            <div id="noPunt">
+                <h6>Todavia no hay puntuaciones guardadas. <br> ¡¡Sé el primero en conseguir una puntuación</h6>
+            </div>
+        </div>
+        <div id="players">
+            <h4>Jugadores</h4>
+            <form action="" id="gameForm">
+                <div id="player1">
+                    <h5>Jugador 1:</h5>
+                    <input type="text" id="namePlayer1" required>
+                </div>
+                <div id="player2">
+                    <h5>Jugador 2:</h5>
+                    <input type="text" id="namePlayer2" required>
+                </div>
+            </form>
+            <div id="buttonContainer">
+                <button id="startGame" type="submit" onclick="startGame();">Jugar!!</button>
+                <button id="deleteName">Limpiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <a href="acerca.html">Juego creado por Cristian Camelo Espinal y Mattia Sorella</a>
+        <p>2023</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

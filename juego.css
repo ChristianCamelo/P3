@@ -1,0 +1,110 @@
+main{
+    margin: 0 auto;
+    text-align: center;
+}
+#game-container{
+    vertical-align: top;
+    display: inline-block;
+    /* border: 2px solid black; */
+    background-color: #ffffff;
+    width: 40%;
+    margin-right: 4%;
+    /* margin: 0 auto; */
+}
+#stats-container{
+    display: inline-block;
+    /* border: 2px solid black; */
+    background-color: #ffffff;
+    height: 30vh;
+    width: 40%;
+    margin: 0 auto;
+}
+#numbers-form{
+    height: fit-content
+}
+#opts{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    background: grey;
+}
+
+#numbers-form button{
+    width: 10vh;
+    background-color: grey;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+#numbers-form button:hover{
+    box-shadow: 0px 0px 5px black;
+}
+button h2{
+    margin: 0 auto;
+    padding: 0;
+}
+#numbers-form .number-active{
+    background-color: #0000ff;
+}
+canvas{
+    font-size:50px ;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 500;
+    height: 500;
+    background-color: orange;
+    cursor: not-allowed;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+}
+.Clickable:hover{
+    cursor: pointer;
+}
+.notClickable:hover{
+    cursor: not-allowed;
+}
+#help-div{
+    display: none;
+    text-shadow: 0 0 5px black;
+    color: white;
+    padding: 40vh;
+    box-sizing: border-box;
+    background-color: #0077fe6e;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    height: 85vh;
+}
+
+#help-div div{
+    margin: 0 auto;
+    vertical-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: grey;
+    padding: 1vh;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#win-div{
+    color: white;
+    display: none;
+    padding: 40vh;
+    box-sizing: border-box;
+    background-color: #0077fe6e;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.verde{
+    width: 100%;
+    height: 2vh;
+    background-color: green;
+    border-radius: 1vh;
+}

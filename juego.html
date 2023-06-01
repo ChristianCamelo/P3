@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumTris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="juego.css">
+    <script src="juego.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo-container" class="logo-container">
+            <img src="logo.png" alt="">
+        </div>
+        <div id="title-container" class="title-container">
+            <h1>NumTris</h1>
+            <h3>Consigue sumar el mayor númeor de múltiplos de 5 para ganar</h3>
+        </div>
+    </header>
+
+    <main>
+            <div id="opts">
+                <button onclick="finishMatch()"><i class="fa fa-power-off"></i>Terminar partida</button>
+                <button onclick="openHelp()"><i class="fa fa-info-circle"></i>Ayuda</button>
+            </div>
+        <div id="help-div">
+            <div>
+                <p>El juego consiste en
+                    ir colocando en las casillas vacías del tablero los números que se
+                    proporcionan en grupos de tres. Juegan dos jugadores por turnos. Si al
+                    colocar un número en una celda vacía, sumándole el que tiene
+                    arriba/abajo/izquierda/derecha se obtiene un múltiplo de 5, se limpian las
+                    casillas correspondientes y el resultado de la suma son los puntos que
+                    acumula el jugador, manteniendo el turno. El juego finaliza cuando ya no
+                    quedan casillas vacías en el tablero, ganando el jugador con mayor
+                    puntuación.</p>
+                    <button onclick="closeHelp()" class="fa fa-mail-reply">Cerrar</button>
+            </div>
+        </div>
+        <div id="win-div">
+            <div>
+                <p>El juego ha terminado, Jugador <strong></strong> ha ganado</p>
+                <button onclick="winClose()" class="fa fa-hand-peace-o">Aceptar</button>
+            </div>
+        </div>
+        <div id="game-container">
+            <div class="top-scores">
+                <h4>Juego</h4>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Jugando</td>
+                        <td>Pos.</td>
+                        <td>Usuario</td>
+                        <td>Puntuación</td>
+                    </tr>
+                </thead>
+                <tr id="GUIp0">
+                    <td class="selector"></td>
+                    <td id="pos1" class="pos">1</td>
+                    <td id="user1" class="user">Usuario</td>
+                    <td id="score1" class="score">0</td>
+                </tr>
+                <tr id="GUIp1">
+                    <td class="selector"></td>
+                    <td id="pos2" class="pos">2</td>
+                    <td id="user2" class="user">Usuario</td>
+                    <td id="score2" class="score">0</td>
+                </tr>
+            </table>
+            <div id="turno-div">
+            </div>
+            <canvas onmouseenter="useCv()"></canvas>
+        </div>
+        <div id="stats-container">
+            <div class="top-scores">
+                <h4>Numeros disponibles</h4>
+            </div>
+            <div id="numbers-form">
+                <button id="value1" onclick="pickedNum(this,value)" value="1"></button>
+                <button id="value2" onclick="pickedNum(this,value)" value="1"></button>
+                <button id="value3" onclick="pickedNum(this,value)" value="1"></button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="acerca.html">Juego creado por Cristian Camelo Espinal y Mattia Sorella</a>
+        <p>2023</p>
+    </footer>
+    <script>
+        setInitial();
+        setRandomNum();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+h1 h2 h3 h4 h5 h6 p a {
+    font-family: 'Sigmar', cursive;
+}
+
+#navbar {
+    margin-top: 20px;
+    background-color: #0077fe;
+    width: 100%;
+    float: left;
+}
+
+#navbar ul {
+    margin: 5px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#navbar ul li {
+    margin: 0;
+    float: left;
+    font-size: 20px;;
+}
+
+#navbar ul li:hover {
+    background: #eca023;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: solid;
+}
+
+table td {
+    border: 2px solid white;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #ffffff;
+}
+
+thead {
+    background-color: #0077fe;
+}
